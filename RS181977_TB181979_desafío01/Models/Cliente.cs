@@ -26,11 +26,15 @@ namespace RS181977_TB181979_desafío01.Models
         [Required(AllowEmptyStrings = false,ErrorMessage = "Campo segundo apellido requerido")]
         public String segundoApellido { get; set; }
 
-        [DataType(DataType.PhoneNumber, ErrorMessage = "El teléfono no cumple con el formato correcto")]
-        [StringLength(8)]
+        [RegularExpression("(^[0-9]+$)", ErrorMessage = "Ingrese un número de teléfono válido")]
+        [MinLength(length: 8)]
+        [MaxLength(length: 8)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Campo teléfono requerido")]
         public string Telefono { get; set; }
 
+
+        [Display(Name = "Correo")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Campo correo requerido")]
         [StringLength(100)]
         [EmailAddress(ErrorMessage = "El correo no cumple con el formato correcto")]
         public string email { get; set; }

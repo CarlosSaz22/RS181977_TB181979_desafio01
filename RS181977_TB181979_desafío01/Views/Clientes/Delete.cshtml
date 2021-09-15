@@ -1,0 +1,64 @@
+﻿@model RS181977_TB181979_desafío01.Models.Cliente
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar</h2>
+
+<h3>¿Estás seguro de que quieres eliminar esto?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primerApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primerApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.segundoApellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.segundoApellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>

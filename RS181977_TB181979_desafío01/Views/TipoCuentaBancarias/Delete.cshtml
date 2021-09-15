@@ -1,0 +1,40 @@
+﻿@model RS181977_TB181979_desafío01.Models.TipoCuentaBancaria
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar</h2>
+
+<h3>¿Estás seguro de que quieres eliminar esto?</h3>
+<div>
+    <h4>Tipo Cuenta Bancaria</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo_Transaccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tipo_Transaccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Activo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activo)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Borrar" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la lista", "Index")
+        </div>
+    }
+</div>

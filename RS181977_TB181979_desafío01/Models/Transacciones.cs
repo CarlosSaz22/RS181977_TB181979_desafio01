@@ -12,14 +12,10 @@ namespace RS181977_TB181979_desafío01.Models
         [Key]
         public int id { get; set; }
 
-        public int? idCuentaBancaria { get; set; }
-        public virtual CuentaBancaria GetCuentaBancarias { get; set; }
+       
 
-        public int? TipoTransaccion { get; set; }
-        public virtual TipoTransaccion TipoTransacciones { get; set; }
-
-        [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
-        [Range(1, float.MaxValue, ErrorMessage = "El monto debe ser positivo")]
+        [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números positivos")]
+        [Range(1, float.MaxValue, ErrorMessage = "El monto debe ser mayor a 0")]
         [Required(AllowEmptyStrings = false,ErrorMessage = "Campo Monto requeridos")]
         public float Monto{ get; set; }
 
@@ -27,14 +23,24 @@ namespace RS181977_TB181979_desafío01.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "Campo estado requerido")]
         public String Estado { get; set; }
 
+  
         [Display(Name = "Fecha de transacción")]
         [Required(ErrorMessage = "Campo fecha de transacción requerido")]
         [DataType(DataType.Date)]
         public DateTime FechaTransaccion { get; set; }
 
+
         [Display(Name = "Fecha de aplicación")]
         [Required(ErrorMessage = "Campo fecha de aplicación requerido")]
         [DataType(DataType.Date)]
         public DateTime FechaAplicación { get; set; }
+
+        [Display(Name = "Cuenta bancaria")]
+        public int? CuentaBancariaId { get; set; }
+        public virtual CuentaBancaria CuentaBancarias { get; set; }
+
+        [Display(Name = "Tipo de transacción")]
+        public int? TipoTransaccionId { get; set; }
+        public virtual TipoTransaccion TipoTransacciones { get; set; }
     }
 }

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<RS181977_TB181979_desafío01.Models.TipoTransaccion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Lista de tipo de transacciones</h2>
+
+<p>
+    @Html.ActionLink("Crear registro", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo_Transaccion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo_Transaccion)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.id }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

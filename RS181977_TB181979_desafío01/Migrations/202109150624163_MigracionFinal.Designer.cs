@@ -6,14 +6,14 @@ namespace RS181977_TB181979_desafío01.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
+    [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
     public sealed partial class MigracionFinal : IMigrationMetadata
     {
         private readonly ResourceManager Resources = new ResourceManager(typeof(MigracionFinal));
         
         string IMigrationMetadata.Id
         {
-            get { return "202109150421103_MigracionFinal"; }
+            get { return "202109150624163_MigracionFinal"; }
         }
         
         string IMigrationMetadata.Source

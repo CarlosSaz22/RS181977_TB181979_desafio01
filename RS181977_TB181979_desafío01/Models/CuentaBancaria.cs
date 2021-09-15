@@ -12,15 +12,19 @@ namespace RS181977_TB181979_desafío01.Models
         [Key]
         public int id { get; set; }
 
-        public int? idCliente { get; set; }
+
+        [Display(Name = "Cliente")]
+        public int? ClienteId { get; set; }
         public virtual Cliente Clientes { get; set; }
-       
 
         [StringLength(100)]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Campo moneda requerido")]
         public String Moneda { get; set; }
 
-        public int? Tipo { get; set; }
+     
+
+        [Display(Name = "Tipo de cuenta bancaria")]
+        public int? TipoCuentaBancariaId { get; set; }
         public virtual TipoCuentaBancaria TipoCuentaBancarias { get; set; }
 
     }
