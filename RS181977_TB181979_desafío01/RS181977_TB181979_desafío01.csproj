@@ -136,6 +136,10 @@
     <Compile Include="Migrations\202109150352490_MigracionInicial.Designer.cs">
       <DependentUpon>202109150352490_MigracionInicial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109150421103_MigracionFinal.cs" />
+    <Compile Include="Migrations\202109150421103_MigracionFinal.Designer.cs">
+      <DependentUpon>202109150421103_MigracionFinal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Banco.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -201,6 +205,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109150352490_MigracionInicial.resx">
       <DependentUpon>202109150352490_MigracionInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109150421103_MigracionFinal.resx">
+      <DependentUpon>202109150421103_MigracionFinal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
