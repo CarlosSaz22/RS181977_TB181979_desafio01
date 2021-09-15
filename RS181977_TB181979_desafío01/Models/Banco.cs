@@ -28,6 +28,7 @@ namespace RS181977_TB181979_desafío01.Models
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<TipoCuentaBancaria> TipoCuentaBancaria { get; set; }
         public virtual DbSet<CuentaBancaria> CuentaBancaria { get; set; }
+        public virtual DbSet<Transacciones> Transacciones { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

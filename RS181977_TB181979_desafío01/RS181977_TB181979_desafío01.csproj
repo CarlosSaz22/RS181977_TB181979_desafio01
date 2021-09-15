@@ -142,6 +142,7 @@
     <Compile Include="Models\CuentaBancaria.cs" />
     <Compile Include="Models\TipoCuentaBancaria.cs" />
     <Compile Include="Models\TipoTransaccion.cs" />
+    <Compile Include="Models\Transacciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
