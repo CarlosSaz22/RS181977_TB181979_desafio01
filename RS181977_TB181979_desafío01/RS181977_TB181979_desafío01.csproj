@@ -139,6 +139,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Banco.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\CuentaBancaria.cs" />
     <Compile Include="Models\TipoCuentaBancaria.cs" />
     <Compile Include="Models\TipoTransaccion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
