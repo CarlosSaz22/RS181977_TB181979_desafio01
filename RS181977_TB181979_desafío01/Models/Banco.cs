@@ -25,6 +25,7 @@ namespace RS181977_TB181979_desafío01.Models
         
      // public virtual DbSet<MyEntity> MyEntities { get; set; }
         public virtual DbSet<TipoTransaccion> TipoTransaccion { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

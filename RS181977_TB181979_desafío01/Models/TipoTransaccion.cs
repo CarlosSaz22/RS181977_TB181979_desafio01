@@ -14,7 +14,7 @@ namespace RS181977_TB181979_desafío01.Models
 
         [Display(Name = "Tipo de transacción")]
         [StringLength(150)]
-        [Required(ErrorMessage = "Campo tipo transacción requerido")]
+        [Required(AllowEmptyStrings = false,ErrorMessage = "Campo tipo transacción requerido")]
         public String Tipo_Transaccion { get; set; }
 
     }
