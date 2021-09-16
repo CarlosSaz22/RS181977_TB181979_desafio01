@@ -24,6 +24,7 @@ namespace RS181977_TB181979_desafío01
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                 
                       "~/Content/site.css"));
         }
     }
