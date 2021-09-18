@@ -141,6 +141,10 @@
     <Compile Include="Migrations\202109150624163_MigracionFinal.Designer.cs">
       <DependentUpon>202109150624163_MigracionFinal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109180623015_Col_Tipo_CuentaBancaria.cs" />
+    <Compile Include="Migrations\202109180623015_Col_Tipo_CuentaBancaria.Designer.cs">
+      <DependentUpon>202109180623015_Col_Tipo_CuentaBancaria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Banco.cs" />
     <Compile Include="Models\Cliente.cs" />
@@ -199,11 +203,6 @@
     <Content Include="Views\Clientes\Details.cshtml" />
     <Content Include="Views\Clientes\Edit.cshtml" />
     <Content Include="Views\Clientes\Index.cshtml" />
-    <Content Include="Views\TipoCuentaBancarias\Create.cshtml" />
-    <Content Include="Views\TipoCuentaBancarias\Delete.cshtml" />
-    <Content Include="Views\TipoCuentaBancarias\Details.cshtml" />
-    <Content Include="Views\TipoCuentaBancarias\Edit.cshtml" />
-    <Content Include="Views\TipoCuentaBancarias\Index.cshtml" />
     <Content Include="Views\TipoTransaccions\Create.cshtml" />
     <Content Include="Views\TipoTransaccions\Delete.cshtml" />
     <Content Include="Views\TipoTransaccions\Details.cshtml" />
@@ -219,6 +218,11 @@
     <Content Include="Views\CuentaBancarias\Details.cshtml" />
     <Content Include="Views\CuentaBancarias\Edit.cshtml" />
     <Content Include="Views\CuentaBancarias\Index.cshtml" />
+    <Content Include="Views\TipoCuentaBancarias\Create.cshtml" />
+    <Content Include="Views\TipoCuentaBancarias\Delete.cshtml" />
+    <Content Include="Views\TipoCuentaBancarias\Details.cshtml" />
+    <Content Include="Views\TipoCuentaBancarias\Edit.cshtml" />
+    <Content Include="Views\TipoCuentaBancarias\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -235,6 +239,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202109150624163_MigracionFinal.resx">
       <DependentUpon>202109150624163_MigracionFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109180623015_Col_Tipo_CuentaBancaria.resx">
+      <DependentUpon>202109180623015_Col_Tipo_CuentaBancaria.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
