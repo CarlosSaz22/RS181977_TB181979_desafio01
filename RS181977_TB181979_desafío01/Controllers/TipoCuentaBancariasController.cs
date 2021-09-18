@@ -46,7 +46,7 @@ namespace RS181977_TB181979_desafío01.Controllers
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "id,Tipo_Transaccion,Activo")] TipoCuentaBancaria tipoCuentaBancaria)
+        public ActionResult Create([Bind(Include = "id,Tipo_CuentaBancaria,Activo")] TipoCuentaBancaria tipoCuentaBancaria)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace RS181977_TB181979_desafío01.Controllers
         // más detalles, vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,Tipo_Transaccion,Activo")] TipoCuentaBancaria tipoCuentaBancaria)
+        public ActionResult Edit([Bind(Include = "id,Tipo_CuentaBancaria,Activo")] TipoCuentaBancaria tipoCuentaBancaria)
         {
             if (ModelState.IsValid)
             {

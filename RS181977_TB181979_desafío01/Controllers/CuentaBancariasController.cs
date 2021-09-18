@@ -40,7 +40,7 @@ namespace RS181977_TB181979_desafío01.Controllers
         public ActionResult Create()
         {
             ViewBag.ClienteId = new SelectList(db.Cliente, "id", "nombres");
-            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_Transaccion");
+            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_CuentaBancaria");
             return View();
         }
 
@@ -59,7 +59,7 @@ namespace RS181977_TB181979_desafío01.Controllers
             }
 
             ViewBag.ClienteId = new SelectList(db.Cliente, "id", "nombres", cuentaBancaria.ClienteId);
-            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_Transaccion", cuentaBancaria.TipoCuentaBancariaId);
+            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_CuentaBancaria", cuentaBancaria.TipoCuentaBancariaId);
             return View(cuentaBancaria);
         }
 
@@ -76,7 +76,7 @@ namespace RS181977_TB181979_desafío01.Controllers
                 return HttpNotFound();
             }
             ViewBag.ClienteId = new SelectList(db.Cliente, "id", "nombres", cuentaBancaria.ClienteId);
-            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_Transaccion", cuentaBancaria.TipoCuentaBancariaId);
+            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_CuentaBancaria", cuentaBancaria.TipoCuentaBancariaId);
             return View(cuentaBancaria);
         }
 
@@ -94,7 +94,7 @@ namespace RS181977_TB181979_desafío01.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.ClienteId = new SelectList(db.Cliente, "id", "nombres", cuentaBancaria.ClienteId);
-            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_Transaccion", cuentaBancaria.TipoCuentaBancariaId);
+            ViewBag.TipoCuentaBancariaId = new SelectList(db.TipoCuentaBancaria, "id", "Tipo_CuentaBancaria", cuentaBancaria.TipoCuentaBancariaId);
             return View(cuentaBancaria);
         }
 
